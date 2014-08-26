@@ -1,6 +1,6 @@
 ## Installation
 
-- Serve your CSS file on localhost
+- Host your CSS file on localhost
 - In `/content.js`, set `CSS_URL` to the localhost URL of your CSS file
 - Launch Chrome
 - Open Window => Extensions
