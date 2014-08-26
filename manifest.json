@@ -1,0 +1,34 @@
+{
+
+  "manifest_version": 2
+
+  , "name": "Style Override"
+
+  , "description": "This extension prevents existing site CSS from being loaded and instead loads local CSS."
+
+  , "version": "1.0"
+
+  , "permissions": [
+    "http://*/*"
+    , "https://*/*"
+    , "tabs"
+    , "webRequest"
+    , "webRequestBlocking"
+  ]
+
+  , "content_scripts": [
+    {
+      "matches": [
+        "http://*/*"
+        , "https://*/*"
+      ]
+      , "js": [ "content.js" ]
+      , "run_at": "document_end"
+    }
+  ]
+
+  , "background": {
+    "scripts": ["background.js"]
+  }
+
+}
