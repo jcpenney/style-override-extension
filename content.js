@@ -1,4 +1,4 @@
-var CSS_URL = "http://localhost:8000/css/app.css";
+var CSS_URL = "http://localhost:8000/assets/css/app.css";
 
 try {
   style = document.createElement("link");
